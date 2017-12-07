@@ -17,9 +17,9 @@ static PyObject *dash_getpowhash(PyObject *self, PyObject *args)
     output = PyMem_Malloc(32);
 
 #if PY_MAJOR_VERSION >= 3
-    dash_hash((char *)PyBytes_AsString((PyObject*) input), output);
+    dash_hash((char *)PyBytes_AsString((PyObject*) input), (int)PyBytes_Size((PyObject*) input), output);
 #else
-    dash_hash((char *)PyString_AsString((PyObject*) input), output);
+    dash_hash((char *)PyString_AsString((PyObject*) input), (int)PyString_Size((PyObject*) input), output);
 #endif
     Py_DECREF(input);
 #if PY_MAJOR_VERSION >= 3
