@@ -5,7 +5,7 @@
 extern "C" {
 #endif
 
-void dash_hash(const char* input, char* output);
+void dash_hash(const char* input, int len, char* output);
 
 #ifdef __cplusplus
 }
