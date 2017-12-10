@@ -42,7 +42,7 @@ class TestSequenceFunctions(unittest.TestCase):
 
     def test_dash_hash(self):
         self.pow_hash = hexlify(dash_hash.getPoWHash(self.block_header))
-        self.assertEqual(self.pow_hash, self.best_hash)
+        self.assertEqual(self.pow_hash.decode(), self.best_hash)
 
 
 if __name__ == '__main__':
