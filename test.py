@@ -28,13 +28,13 @@ import unittest
 # }
 
 header_hex = ("00000020" + # version
-    "b67a40f3cd5804437a108f105533739c37e6229bc1adcab385140b59fd0f0000" + # reverse-hex previousblockhash
-    "a71c1aade44bf8425bec0deb611c20b16da3442818ef20489ca1e2512be43eef"   # reverse-hex merkleroot
-    "814cdb52" + # reverse-hex time
+    "0c15f2b4a7bab614b7fbc8f8701d82220ea66e9fcd78eae6e76ce02b8e0c0000" + # reverse-hex previousblockhash
+    "aee6170ff7c4898c5943c2e23c3be55f24bcae12c35a26b6a2132059418429a4" + # reverse-hex merkleroot
+    "7ccc715a" + # reverse-hex time
     "f0ff0f1e" + # reverse-hex bits
     "55390100")  # reverse-hex nonce
 
-best_hash = '434341c0ecf9a2b4eec2644cfadf4d0a07830358aed12d0ed654121dd9070000' # reverse-hex block hash
+best_hash = 'bf3fc19cd7c0dcb1dc154e3ca8cf67c1ecd6bf8dd05487898571efeee9050000' # reverse-hex block hash
 
 class TestSequenceFunctions(unittest.TestCase):
 
