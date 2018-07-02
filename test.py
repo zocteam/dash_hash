@@ -34,7 +34,7 @@ header_hex = ("00000020" + # version
     "f0ff0f1e" + # reverse-hex bits
     "55390100")  # reverse-hex nonce
 
-best_hash = '434341c0ecf9a2b4eec2644cfadf4d0a07830358aed12d0ed654121dd9070000' # reverse-hex block hash
+best_hash = 'bf3fc19cd7c0dcb1dc154e3ca8cf67c1ecd6bf8dd05487898571efeee9050000' # reverse-hex block hash
 
 class TestSequenceFunctions(unittest.TestCase):
 
